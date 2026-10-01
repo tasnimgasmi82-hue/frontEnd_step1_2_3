@@ -1,0 +1,37 @@
+[
+  {
+    "idTache": 1,
+    "libelle": "Finaliser le travail de réalité virtuelle UE31A",
+    "description": "Terminer le travail demandé dans le cadre de l'UE31A sur la réalité virtuelle",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-08"
+  },
+  {
+    "idTache": 2,
+    "libelle": "Compléter le plan de formation",
+    "description": "Compléter le plan de formation avec le maître d'apprentissage et le tuteur enseignant",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-06"
+  },
+  {
+    "idTache": 3,
+    "libelle": "Vérifier la reprogrammation des cours",
+    "description": "Consulter les nouvelles dates et vérifier les éventuelles modifications dans la programmation des cours",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-02"
+  },
+  {
+    "idTache": 4,
+    "libelle": "Contacter la scolarité pour le certificat",
+    "description": "Contacter la scolarité afin d'obtenir le certificat de scolarité de l'année en cours",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-05"
+  },
+  {
+    "idTache": 5,
+    "libelle": "Finaliser la première vidéo de la formation",
+    "description": "Terminer la conception et les dernières modifications de la première vidéo de la formation e-learning",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-07"
+  }
+]
