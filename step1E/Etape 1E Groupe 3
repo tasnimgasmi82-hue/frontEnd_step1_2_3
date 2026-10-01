@@ -188,5 +188,22 @@
 
 <body>
 
+    <script>
+        document.write("<h1>Liste des priorités</h1>");
+        document.write(JSON.stringify(listePriorites));
+
+        document.write("<h1>Liste des canaux</h1>");
+        document.write(JSON.stringify(listeCanaux));
+
+        document.write("<h1>Liste des types de tâche</h1>");
+        document.write(JSON.stringify(listeTypesTache));
+
+        document.write("<h1>Liste des environnements</h1>");
+        document.write(JSON.stringify(listeEnvironnements));
+
+        document.write("<h1>Liste des tâches</h1>");
+        document.write(JSON.stringify(listeTaches));
+    </script>
+
 </body>
 </html>
