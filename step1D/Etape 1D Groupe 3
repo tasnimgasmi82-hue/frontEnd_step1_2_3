@@ -1,0 +1,57 @@
+[
+  {
+    "idTache": 1,
+    "libelle": "Finaliser le travail de réalité virtuelle UE31A",
+    "description": "Terminer le travail demandé dans le cadre de l'UE31A sur la réalité virtuelle",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-08",
+    "idPriorite": 5,
+    "idCanal": 2,
+    "idTypeTache": 2,
+    "idEnvironnement": 1
+  },
+  {
+    "idTache": 2,
+    "libelle": "Compléter le plan de formation",
+    "description": "Compléter le plan de formation avec le maître d'apprentissage et le tuteur enseignant",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-06",
+    "idPriorite": 4,
+    "idCanal": 5,
+    "idTypeTache": 6,
+    "idEnvironnement": 3
+  },
+  {
+    "idTache": 3,
+    "libelle": "Vérifier la reprogrammation des cours",
+    "description": "Consulter les nouvelles dates et vérifier les éventuelles modifications dans la programmation des cours",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-02",
+    "idPriorite": 3,
+    "idCanal": 4,
+    "idTypeTache": 1,
+    "idEnvironnement": 1
+  },
+  {
+    "idTache": 4,
+    "libelle": "Contacter la scolarité pour le certificat",
+    "description": "Contacter la scolarité afin d'obtenir le certificat de scolarité de l'année en cours",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-05",
+    "idPriorite": 4,
+    "idCanal": 1,
+    "idTypeTache": 4,
+    "idEnvironnement": 1
+  },
+  {
+    "idTache": 5,
+    "libelle": "Finaliser la première vidéo de la formation",
+    "description": "Terminer la conception et les dernières modifications de la première vidéo de la formation e-learning",
+    "dateCreation": "2026-10-01",
+    "dateEcheance": "2026-10-07",
+    "idPriorite": 5,
+    "idCanal": 7,
+    "idTypeTache": 7,
+    "idEnvironnement": 2
+  }
+]
