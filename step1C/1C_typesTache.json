@@ -1,1 +1,10 @@
-
+[
+  {"idTypeTache":1,"typeTache":"Cours"},
+  {"idTypeTache":2,"typeTache":"Devoir à déposer"},
+  {"idTypeTache":3,"typeTache":"Projet en groupe"},
+  {"idTypeTache":4,"typeTache":"Démarche administrative"},
+  {"idTypeTache":5,"typeTache":"Réunion professionnelle"},
+  {"idTypeTache":6,"typeTache":"Réunion pédagogique"},
+  {"idTypeTache":7,"typeTache":"Conception ou production"},
+  {"idTypeTache":8,"typeTache":"Communication"}
+]
