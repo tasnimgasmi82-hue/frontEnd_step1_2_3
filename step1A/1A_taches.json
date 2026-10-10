@@ -13,7 +13,7 @@
 	"description": "Compléter le plan de formation en coordination avec le maître d'apprentissage et le tuteur enseignant.",
 	"dateCreation": "2026-10-01",
 	"dateEcheance": "2026-10-12",
-              "tempsEstimeMinutes": 90,
+    "tempsEstimeMinutes": 90,
 	  },
   {
 	"idTache": 3,
@@ -21,7 +21,7 @@
 	"description": "Consulter les nouvelles dates et vérifier les éventuelles modifications dans la programmation des cours.",
 	"dateCreation": "2026-10-01",
 	"dateEcheance": "2026-10-09",
-             "tempsEstimeMinutes": 15,
+    "tempsEstimeMinutes": 15,
 	  },
   {
 	"idTache": 4,
