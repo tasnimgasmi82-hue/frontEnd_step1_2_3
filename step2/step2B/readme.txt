@@ -596,7 +596,266 @@
                 animation: none;
             }
         }
+
+       
+        @keyframes apparition {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes flotte {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(-5px); }
+        }
+
+        @keyframes brille {
+            from { transform: translateX(-120%) skewX(-20deg); }
+            to   { transform: translateX(260%) skewX(-20deg); }
+        }
+
+        .logo-cadre { animation: apparition 0.9s ease backwards; }
+        .slogan     { animation: apparition 0.9s 0.15s ease backwards; }
+        .chips      { animation: apparition 0.9s 0.3s ease backwards; }
+        .formulaire { animation: apparition 0.9s 0.45s ease backwards; }
+
+        
+        .logo-cadre {
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+        .logo-cadre:hover {
+            transform: scale(1.04) rotate(-1.5deg);
+            filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.7));
+        }
+
+        
+        .slogan {
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+        .slogan:hover {
+            transform: translateY(-3px) scale(1.03);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .chips li {
+            cursor: default;
+            animation: flotte 4s ease-in-out infinite;
+        }
+        .chips li:nth-child(2) { animation-delay: 0.5s; }
+        .chips li:nth-child(3) { animation-delay: 1s; }
+        .chips li:nth-child(4) { animation-delay: 1.5s; }
+        .chips li:hover {
+            animation: none;
+            background: linear-gradient(135deg, var(--bleu), var(--violet));
+            border-color: transparent;
+            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.45);
+            transform: translateY(-4px) scale(1.07);
+        }
+
+        
+        nav a {
+            position: relative;
+            transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(79, 70, 229, 0.35);
+        }
+
+       
+        .formulaire {
+            border: 1px solid rgba(124, 58, 237, 0.08);
+            transition: box-shadow 0.4s ease, transform 0.4s ease;
+        }
+        .formulaire:hover {
+            box-shadow: 0 26px 70px rgba(79, 70, 229, 0.28);
+            transform: translateY(-3px);
+        }
+
+        .formulaire h2 .pastille {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .formulaire h2:hover .pastille {
+            transform: rotate(180deg) scale(1.1);
+            box-shadow: 0 10px 22px rgba(79, 70, 229, 0.5);
+        }
+
+        fieldset {
+            padding: 18px 18px 22px;
+            margin-top: 22px;
+            border-radius: 14px;
+            border: 1px solid transparent;
+            transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        fieldset:hover,
+        fieldset:focus-within {
+            background: linear-gradient(135deg, rgba(219, 234, 254, 0.35), rgba(237, 233, 254, 0.35));
+            border-color: rgba(124, 58, 237, 0.18);
+            box-shadow: 0 8px 22px rgba(79, 70, 229, 0.08);
+        }
+
+        
+        label {
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+        .champ:hover label,
+        .champ:focus-within label {
+            color: var(--violet);
+            transform: translateX(3px);
+        }
+
+       
+        input,
+        select,
+        textarea {
+            transition: border-color 0.25s, box-shadow 0.25s, background 0.25s, transform 0.25s;
+        }
+        input:hover,
+        select:hover,
+        textarea:hover {
+            background-color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(30, 58, 138, 0.1);
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            transform: translateY(-2px);
+        }
+        select {
+            cursor: pointer;
+        }
+
+        
+        .info:hover,
+        .info:focus {
+            animation: rebond 0.5s ease;
+        }
+        @keyframes rebond {
+            0%   { transform: scale(1); }
+            40%  { transform: scale(1.35); }
+            100% { transform: scale(1.12); }
+        }
+
+        
+        button {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-enregistrer::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+            transform: translateX(-120%) skewX(-20deg);
+            pointer-events: none;
+        }
+        .btn-enregistrer:hover::after {
+            animation: brille 0.9s ease;
+        }
+        .btn-enregistrer:hover {
+            transform: translateY(-3px) scale(1.01);
+        }
+        .btn-effacer:hover {
+            transform: translateY(-3px) rotate(-1deg);
+        }
+
+        /* Pied de page */
+        footer .logo-mini {
+            transition: transform 0.8s ease;
+        }
+        footer:hover .logo-mini {
+            transform: rotate(360deg) scale(1.15);
+        }
+        footer p {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        footer p:hover {
+            color: #fff;
+            transform: translateX(4px);
+        }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #e2e8f0; }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--bleu), var(--violet));
+            border-radius: 10px;
+        }
+
+        
+        ::selection {
+            background: var(--violet);
+            color: #fff;
+        }
+
+       
+        @media (prefers-reduced-motion: reduce) {
+            .logo-cadre, .slogan, .chips, .formulaire, .chips li {
+                animation: none;
+            }
+            .btn-enregistrer:hover::after {
+                animation: none;
+            }
+            .formulaire:hover, input:hover, select:hover, textarea:hover,
+            .logo-cadre:hover, button:hover {
+                transform: none;
+            }
+        }
     </style>
+    <script>
+        const listesDeroulantes = {
+            priorite: [
+                { idPriorite: 1, priorite: "Très faible" },
+                { idPriorite: 2, priorite: "Faible" },
+                { idPriorite: 3, priorite: "Moyenne" },
+                { idPriorite: 4, priorite: "Importante" },
+                { idPriorite: 5, priorite: "Urgente" }
+            ],
+            typeTache: [
+                { idTypeTache: 1, typeTache: "Cours" },
+                { idTypeTache: 2, typeTache: "Devoir à déposer" },
+                { idTypeTache: 3, typeTache: "Projet en groupe" },
+                { idTypeTache: 4, typeTache: "Démarche administrative" },
+                { idTypeTache: 5, typeTache: "Réunion professionnelle" },
+                { idTypeTache: 6, typeTache: "Réunion pédagogique" },
+                { idTypeTache: 7, typeTache: "Conception ou production" },
+                { idTypeTache: 8, typeTache: "Communication" }
+            ],
+            environnement: [
+                { idEnvironnement: 1, environnement: "École" },
+                { idEnvironnement: 2, environnement: "Entreprise" },
+                { idEnvironnement: 3, environnement: "École et entreprise" }
+            ],
+            statut: [
+                { idStatut: 1, statut: "À faire" },
+                { idStatut: 2, statut: "En cours" },
+                { idStatut: 3, statut: "En attente" },
+                { idStatut: 4, statut: "Terminée" },
+                { idStatut: 5, statut: "Annulée" }
+            ]
+        };
+
+        function afficherOptions(selectId, options, proprieteId, proprieteTexte) {
+            const liste = document.getElementById(selectId);
+
+            options.forEach(function (item) {
+                const option = document.createElement("option");
+                option.value = item[proprieteId];
+                option.textContent = item[proprieteTexte];
+                liste.appendChild(option);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            afficherOptions("priorite", listesDeroulantes.priorite, "idPriorite", "priorite");
+            afficherOptions("typeTache", listesDeroulantes.typeTache, "idTypeTache", "typeTache");
+            afficherOptions("environnement", listesDeroulantes.environnement, "idEnvironnement", "environnement");
+            afficherOptions("statut", listesDeroulantes.statut, "idStatut", "statut");
+        });
+    </script>
 </head>
 
 <body>
@@ -774,59 +1033,6 @@
         <p>Sous la direction de : Eric CHRISTOFFEL</p>
         <p>&copy; 2026 — Tous droits réservés</p>
     </footer>
-
-
-
-    <script>
-        
-        const listesDeroulantes = {
-            priorite: [
-                { valeur: "1", texte: "Très faible" },
-                { valeur: "2", texte: "Faible" },
-                { valeur: "3", texte: "Moyenne" },
-                { valeur: "4", texte: "Importante" },
-                { valeur: "5", texte: "Urgente" }
-            ],
-            typeTache: [
-                { valeur: "1", texte: "Cours" },
-                { valeur: "2", texte: "Devoir à déposer" },
-                { valeur: "3", texte: "Projet en groupe" },
-                { valeur: "4", texte: "Démarche administrative" },
-                { valeur: "5", texte: "Réunion professionnelle" },
-                { valeur: "6", texte: "Réunion pédagogique" },
-                { valeur: "7", texte: "Conception ou production" },
-                { valeur: "8", texte: "Communication" }
-            ],
-            environnement: [
-                { valeur: "1", texte: "École" },
-                { valeur: "2", texte: "Entreprise" },
-                { valeur: "3", texte: "École et entreprise" }
-            ],
-            statut: [
-                { valeur: "1", texte: "À faire" },
-                { valeur: "2", texte: "En cours" },
-                { valeur: "3", texte: "En attente" },
-                { valeur: "4", texte: "Terminée" },
-                { valeur: "5", texte: "Annulée" }
-            ]
-        };
-
-        function afficherOptions(selectId, options) {
-            const liste = document.getElementById(selectId);
-            options.forEach(function (option) {
-                const nouvelElement = document.createElement("option");
-                nouvelElement.value = option.valeur;
-                nouvelElement.textContent = option.texte;
-                liste.appendChild(nouvelElement);
-            });
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            Object.keys(listesDeroulantes).forEach(function (selectId) {
-                afficherOptions(selectId, listesDeroulantes[selectId]);
-            });
-        });
-    </script>
 
 </body>
 </html>
